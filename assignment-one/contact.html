@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <header>
+      <a href="./index.html"> My Profile </a><br />
+      <a href="./table.html">Alphabet Table</a>
+    </header>
+    <main>
+      <h1>contact Form</h1>
+      <p>Fill in your details</p>
+      <form>
+        <div>
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="Enter first name"
+            required
+          />
+        </div>
+        <div>
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            id="lastname"
+            name="lastname"
+            placeholder="Enter last name"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter email address"
+            required
+          />
+        </div>
+        <div>
+          <label for="message">Message</label>
+          <input
+            type="message"
+            id="message"
+            name="message"
+            placeholder="Enter your message here..."
+            required
+          />
+        </div>
+
+        <div>
+          <label for="priority">Priority</label>
+          <select name="priority" id="priority">
+            <option value="" selected disabled>Select level of priority</option>
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+
+        <div>
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
