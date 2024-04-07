@@ -30,6 +30,7 @@
     border: 2px solid var(--color-border);
     border-radius: 15px;
     padding: 10px;
+    box-shadow: 4px 2px var(--color-primary);
 }
 
 .calculator__container h4 {
@@ -68,8 +69,12 @@
     justify-content: center;
     font-weight: 600;
     font-size: 32px;
-
     border-radius: 10px;
+    cursor: pointer;
+}
+
+.key:hover {
+    box-shadow: 1px 2px 5px var(--color-primary);
 }
 
 .operand {
