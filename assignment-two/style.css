@@ -42,6 +42,10 @@ a {
     text-decoration: none;
 }
 
+p:not(:last-child) {
+    margin-bottom: 20px;
+}
+
 .wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -52,8 +56,9 @@ a {
 .sidebar {
     position: fixed;
     left: 0;
-    right: 0;
+    /* right: 0; */
     width: 50vw;
+    height: 100%;
     padding: 0 50px;
     display: flex;
     flex-direction: column;
@@ -208,9 +213,9 @@ a {
 
 .timeline__content {
     padding: 15px;
-    background: rgba(255, 255, 255, 0.025);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     backdrop-filter: blur(10px) saturate(190%);
     -webkit-backdrop-filter: blur(10px) saturate(200%);
 }
@@ -245,24 +250,35 @@ a {
 }
 
 .project__card:hover {
-    background: rgba(255, 255, 255, 0.025);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
     backdrop-filter: blur(10px) saturate(190%);
     -webkit-backdrop-filter: blur(10px) saturate(200%);
 }
 
+.project__details i {
+    margin-right: 5px;
+}
+
+.project__details .stack {
+    margin: 15px 0 10px;
+}
+
+.project__details .stack span {
+    padding: 2px 4px;
+    border-radius: 5px;
+    background: var(--color-white);
+    font-size: 0.7rem;
+    color: var(--color-background);
+}
+
 .project__details .links {
-    margin-top: 10px;
     font-size: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     align-self: baseline;
-}
-
-.project__details i {
-    margin-right: 5px;
 }
 
 .project__details .links a {
@@ -289,8 +305,7 @@ a {
 
 .input__group input,
 .input__group textarea,
-.input__group select,
-.input__group option {
+.input__group select {
     font-size: 1rem;
     width: 100%;
     padding: 10px;
@@ -424,6 +439,14 @@ a {
         font-size: 0.9rem;
     }
 
+    .timeline__container ul {
+        padding: 0;
+    }
+
+    .timeline {
+        padding-right: 0;
+    }
+
     .project__card {
         padding: 10px;
     }
@@ -437,8 +460,20 @@ a {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 420px) {
+    .wrapper {
+        margin-top: 0;
+    }
+
+    .sidebar {
+        margin: 20px auto;
+    }
+
     .profile__name {
         font-size: 2.4rem;
+    }
+
+    .socials {
+        margin-top: 25px auto;
     }
 }
