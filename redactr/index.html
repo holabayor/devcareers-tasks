@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REDACTR</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7926b5ab8d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <h2 class="heading__text">REDACTR</h2>
+      <p class="sub__title">Scramble some words from a body of text content</p>
+      <form>
+        <div class="input__group">
+          <label for="name">Words to be redacted (separated by spaces)</label>
+          <input type="text" id="wordsToRedact" name="name" required />
+          <!-- placeholder="Enter your name" -->
+        </div>
+        <div class="input__group">
+          <label for="content">Original Text</label>
+          <textarea
+            name="content"
+            id="content"
+            rows="6"
+            placeholder="Enter the original text here..."
+            required
+            style="resize: vertical"
+          ></textarea>
+        </div>
+
+        <div class="input__group">
+          <label for="patternSelect">Choose replacement pattern</label>
+          <select name="pattern" id="patternSelect">
+            <option value="****" selected>Default</option>
+            <option value="----">Dashes ----</option>
+            <option value="????">Questions marks ????</option>
+            <option value="">Customize pattern</option>
+          </select>
+        </div>
+
+        <div class="input__group" id="customPatternInput" style="display: none">
+          <label for="customPattern">Enter Custom Pattern</label>
+          <input
+            type="text"
+            id="customPattern"
+            name="customPattern"
+            placeholder="e.g., ####"
+          />
+        </div>
+
+        <div class="input__group">
+          <button id="submitButton" type="submit">Redact Now</button>
+        </div>
+        <div class="input__group">
+          <button id="resetButton" type="reset">Reset Form</button>
+        </div>
+
+        <div id="allOutput" style="display: none">
+          <div id="redactedOutput" class="redacted"></div>
+          <div class="stats__container">
+            <h6>STATS</h6>
+            <div class="stats__details">
+              <div>
+                Total words: <span id="totalWords" class="value">0</span>
+              </div>
+              <div>
+                Words to be redacted:
+                <span id="wordsToRedactCount" class="value">0</span>
+              </div>
+              <div>
+                Successfully redacted words:
+                <span id="redactionCount" class="value">0</span>
+              </div>
+            </div>
+            <p style="text-align: center; font-size: 0.7rem">
+              Total time taken is <span id="totalTime"></span> milliseconds
+            </p>
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
