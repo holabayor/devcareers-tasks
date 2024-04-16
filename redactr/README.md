@@ -32,4 +32,4 @@ REDACTR is a web application designed to enhance privacy and security when shari
 
 REDACTR empowers users to share content on social media platforms securely, ensuring sensitive information remains protected. With its intuitive interface and advanced features, REDACTR offers a comprehensive solution for safeguarding privacy in online communication.
 
-[Live Demo](https://)
+[Live Demo](https://redactit.netlify.app)
