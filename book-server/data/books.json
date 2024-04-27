@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "The Adventures of Huckleberry Finn",
+    "status": "available",
+    "author": "Mark Finn",
+    "format": "pdf"
+  },
+  {
+    "id": 2,
+    "title": "Mystery of the Ancient Ruins",
+    "status": "available",
+    "author": "Emily Smith",
+    "format": "epub"
+  },
+  {
+    "id": 3,
+    "title": "Journey Through the Stars",
+    "status": "available",
+    "author": "Michael Johnson",
+    "format": "pdf"
+  },
+  {
+    "id": 4,
+    "title": "Secrets of the Deep Ocean",
+    "status": "loaned",
+    "author": "Laura Brown",
+    "format": "txt"
+  },
+  {
+    "id": 5,
+    "title": "The Art of Cooking Beans",
+    "status": "loaned",
+    "author": "Chef Tobi Oyelami",
+    "format": "pdf"
+  },
+  {
+    "id": 6,
+    "title": "Town Crier Blog 5",
+    "status": "available",
+    "author": "Chef Tobi Oyelami"
+  }
+]
