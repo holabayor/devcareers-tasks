@@ -74,8 +74,16 @@ const handleUserRequest = (request, response, body) => {
 const handleBookRequest = (request, response, body) => {
   const books = readDataFromFile(booksFile);
   switch (request.url) {
-    case '/books/create':
-      if (request.method === 'POST') {
+    case '/books':
+      if (request.method === 'GET') {
+        response.end(
+          JSON.stringify({
+            success: true,
+            message: 'All books have been',
+            books,
+          })
+        );
+      } else if (request.method === 'POST') {
         const newBook = JSON.parse(body);
         newBook.id = books.length + 1;
         newBook.status = 'available';
