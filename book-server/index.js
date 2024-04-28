@@ -79,7 +79,7 @@ const handleBookRequest = (request, response, body) => {
         response.end(
           JSON.stringify({
             success: true,
-            message: 'All books have been',
+            message: 'All books',
             books,
           })
         );
