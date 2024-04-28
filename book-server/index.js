@@ -1,7 +1,7 @@
 import http from 'node:http';
 import { readFileSync, writeFileSync } from 'node:fs';
 
-const host = 'localhost';
+const host = '0.0.0.0';
 const port = 8900;
 
 const usersFile = './data/users.json';
